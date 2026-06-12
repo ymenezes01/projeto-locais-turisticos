@@ -1,0 +1,271 @@
+header {
+  background-color: #0f172a;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 20px;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+}
+
+.menu-turismo ul {
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  margin: 20px 0;
+  list-style-type: none;
+  gap: 20px;
+}
+
+.menu-turismo a {
+  text-decoration: none;
+  color: #94a3b8;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 2px solid #334155;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.menu-turismo a:hover {
+    background-color: #10b981; 
+    border-color: #10b981;
+    color: #ffffff; 
+}
+
+main {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 40px 20px;
+  margin: 0 auto;
+  background-color: #f8fafc;
+  color: #334155;
+  font-family: 'Open Sans', sans-serif;
+}
+
+main h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #0f172a;
+  font-family: "Playfair Display", serif;
+}
+
+/* --- ESTILIZAÇÃO DA SEÇÃO DE DESTINOS --- */
+
+#destinos h3 {
+  font-family: 'Playfair Display', serif;
+    color: #0f172a;
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #10b981; /* Linha verde sutil abaixo da categoria */
+    padding-bottom: 8px;
+}
+
+/* Container que deixa os cartões lado a lado */
+.container-destinos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Organiza em colunas automáticas */
+    gap: 30px; /* Espaço entre cada cartão */
+    margin-bottom: 50px;
+}
+
+/* O Cartão Individual de cada local */
+.card-destino {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden; /* Garante que a imagem respeite a borda arredondada */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Sombra suave de fundo */
+    border: 1px solid #e2e8f0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Efeito ao passar o mouse em cima de um cartão turístico */
+.card-destino:hover {
+    transform: translateY(-5px); /* Eleva sutilmente o cartão */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Destaca a sombra */
+}
+
+/* Ajuste profissional das imagens dos destinos */
+.card-destino img {
+    width: 100%;
+    height: 200px; /* Força todas as imagens a terem exatamente a mesma altura */
+    object-fit: cover; /* Recorta a imagem proporcionalmente sem distorcer ou esticar */
+}
+
+/* Títulos dos destinos (ex: Cachoeira do Itaúna) */
+.card-destino h4 {
+    font-family: 'Playfair Display', serif;
+    color: #0f172a;
+    font-size: 18px;
+    padding: 15px 15px 5px 15px;
+    margin: 0;
+}
+
+/* Texto descritivo dentro do cartão */
+.card-destino p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #475569;
+    padding: 0 15px 15px 15px;
+    margin: 0;
+    text-align: left; /* Alinhamento à esquerda fica mais harmônico em blocos pequenos */
+}
+
+/* --- ESTILIZAÇÃO DA SEÇÃO COMO CHEGAR --- */
+
+#como-chegar {
+    padding: 40px 20px;
+}
+
+.intro-chegar {
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #475569;
+}
+
+/* Coloca os blocos de Carro e Ônibus lado a lado no PC */
+.container-rotas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.bloco-transporte {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.bloco-transporte h3 {
+    font-family: 'Playfair Display', serif;
+    color: #0f172a;
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.bloco-transporte p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #475569;
+    text-align: left;
+}
+
+.bloco-transporte ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.bloco-transporte li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #334155;
+    margin-bottom: 12px;
+}
+
+.bloco-transporte strong {
+    color: #10b981; /* Usa o verde de destaque que configuramos no menu */
+}
+
+/* --- ESTILIZAÇÃO DA SEÇÃO MELHOR ÉPOCA --- */
+
+#melhor-epoca {
+    padding: 40px 20px;
+}
+
+.intro-epoca {
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #475569;
+}
+
+/* Coloca os dois blocos lado a lado no computador */
+.container-epocas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card-epoca {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.card-epoca h3 {
+    font-family: 'Playfair Display', serif;
+    color: #0f172a;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.card-epoca h4 {
+    font-family: 'Open Sans', sans-serif;
+    color: #10b981; /* O verde de destaque do site */
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.card-epoca p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #475569;
+    text-align: left;
+    margin-bottom: 12px;
+}
+
+.card-epoca em, .card-epoca strong {
+    color: #334155;
+}
+
+/* --- ESTILIZAÇÃO DA SEÇÃO CONTATO --- */
+
+#contato {
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  margin: 20px 0;
+  list-style-type: none;
+  gap: 20px;
+}
+
+a {
+    color: #0f172a;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #10b981; 
+}
+
+footer {
+    background-color: #334155; 
+    color: #ffffff;            
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 0.9rem;
+}
